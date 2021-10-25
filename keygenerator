@@ -1,0 +1,12 @@
+clear
+echo -ne "que senha?: "; read senha
+echo -ne "sua senha: "; read sum
+echo -ne ": "; read bin
+touch teste.sh
+echo "echo -ne 'qual a senha?: '; read $sum
+case $bin in
+    $senha)
+   echo parabens voce conseguiu
+   exit;
+   ;;
+esac" >teste.sh
