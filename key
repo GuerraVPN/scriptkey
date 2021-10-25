@@ -1,6 +1,12 @@
 echo -ne 'qual a senha?: '; read key
-case "key" in
+case "$key" in
     01010-78901)
-   echo parabens voce conseguiu
+   clear
+   apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/GuerraVPN/VPSScripts/main/insvpss.sh; chmod 777 insvpss.sh; ./insvpss.sh; rm insvpss.sh
+   clear
+   ;;
+    *)
+   echo Senha Invalida
    exit;
    ;;
+esac
