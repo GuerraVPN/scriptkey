@@ -1,0 +1,6 @@
+echo -ne 'qual a senha?: '; read key
+case "key" in
+    01010-78901)
+   echo parabens voce conseguiu
+   exit;
+   ;;
